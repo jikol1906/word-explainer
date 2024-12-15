@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Word Explainer</title></head>
+<body>
+<h1>Word Explainer</h1>
+<p>Right-click a word on any page and choose "Explain selected word".</p>
+<button id="openOptions">Settings</button>
+<script>
+    document.getElementById("openOptions").addEventListener("click", () => {
+        chrome.runtime.openOptionsPage();
+    });
+</script>
+</body>
+</html>
